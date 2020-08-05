@@ -17,7 +17,7 @@ prefs = {
 
 options.add_experimental_option("prefs",prefs)
 #options.add_argument("-disable-features=EnableEphemeralFlashPermission");
-driver = webdriver.Chrome(executable_path=r'D:\근로장학생\김동규\Chromedriver\chromedriver.exe', chrome_options=options)
+driver = webdriver.Chrome(executable_path=r'\Chromedriver\chromedriver.exe', chrome_options=options)
 driver.get(url)
 
 
