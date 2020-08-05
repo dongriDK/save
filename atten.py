@@ -3,8 +3,8 @@ from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 from selenium.webdriver.chrome.options import Options
 url = "https://portal.hannam.ac.kr/wps/index.jsp"
-id = "20140765"
-pw = "QboWdg@12"
+id = ""
+pw = ""
 
 options = Options()
 options.add_argument('-allow-running-insecure-content')
