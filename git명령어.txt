@@ -1,0 +1,57 @@
+* git 폴더 초기화
+git init				(원하는 폴더 경로에서)
+
+* 파일을 로컬 레파지토리에 추가
+git add <file_name1>
+git add <file_name2>
+
+* 파일을 로컬 레파지토리에 커밋
+git commit -m "comment"
+
+* 로컬 레파지토리에 추가되었는지 확인
+git status
+
+* 원격 저장소의 정보 추가
+git remote add origin https://github.com/dongriDK/repositoryName	(origin이라는 이름으로 쓰겠다)
+
+* 로컬 레파지토리의 파일들을 원격 레파지토리에 반영 (push)
+git push origin master		(master는 브랜치 이름)
+
+
+* branch 리스트
+git branch
+git branch --list
+git branch -a 					(원격 브랜치도 전부 보여줌)
+
+* 로컬 branch 생성1
+git branch <branch_name>
+git checkout <branch_name>
+
+* 로컬 branch 생성2
+git checkout -b <branch_name>			(branch-off 브랜치로부터 clone됨)
+
+* 로컬 branch 생성3
+git chackout -b <branch_name> <base_branch_name> 	(branch-off 할 브랜치가 현재 브랜치가 아닐 때)
+
+* 원격 branch 생성(푸시)
+git push --set-upstream origin <branch_name>
+
+* branch 변경 & 삭제
+git branch -m <branch_name>				(브랜치 이름 변경)
+git branch -d <branch_name> (or -D)			(로컬 브랜치 삭제)
+git push origin --delete <branch_name> 			(원격 브랜치 삭제)
+
+* 병합(merge)
+git checkout master
+git merge feature-4			(로컬 master 브랜치에 feature-4브랜치 파일들을 넣는다)
+
+* 가져오기(pull)
+git checkout feature-4
+git pull origin master			(로컬 feature-4 브랜치에 master브랜치 파일들을 가져온다)
+
+* 가져오기(clone)
+git clone <url>			(기존 원격 저장소(github에 공개되어 있는 저장소)를 로컬에 다운로드하기 위해 사용)
+
+* 원격 저장소 파일 삭제
+git rm <file_name>
+git push origin <repositoryName>
